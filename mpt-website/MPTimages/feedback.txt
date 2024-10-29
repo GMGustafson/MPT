@@ -1,0 +1,10 @@
+feedback 
+- add company logo 
+- make the photos bigger 
+- center everything basically 
+-move other products 
+- add more background color 
+- add footer on all pages 
+- hover color on nav 
+- add headers 
+
