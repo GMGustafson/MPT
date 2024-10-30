@@ -1,6 +1,51 @@
 header 
 {
-     background-color: rgb(129, 17, 17);
+     background-color: white;
      border: 2px solid black;  
-     color: white;
+     color:rgb(129, 17, 17);
+
 }
+
+img 
+{ 
+     max-width: 30%;
+}
+
+header
+{ 
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+#logo1
+{ 
+    max-width: 200px;
+    max-height: 100px;
+    top:0px; 
+    right: 3px;  
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+#logo2
+{ 
+    max-width: 200px;
+    max-height: 100px;
+    top:0px; 
+    left: 3px;
+    padding-right: 20px; 
+    padding-left: 20px; 
+
+}
+
+/* apply to 600px or bigger */
+@media only screen and (min-width:600px){
+     .columns
+     { 
+         display:flex; 
+     }
+ 
+ }
+ 
+

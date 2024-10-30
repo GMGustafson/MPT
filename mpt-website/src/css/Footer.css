@@ -1,0 +1,22 @@
+footer 
+{
+    background-color: black;
+    border: 2px solid black;  
+    color:white;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+
+}
+
+footer a 
+{ 
+    color: white; 
+    text-decoration: none;
+}
+
+
+footer a:hover
+{ 
+    background-color: rgb(129, 17, 17);
+}

@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #bfbfbf; 
+    --third-color:#7C1A1C; 
+    --fourth-color:rgb(81, 79, 79);
+    --fifth-color: #f6eded; 
+    --sixth-color: #c9c9c9;
+    --seventh-color: #DEDEDE; 
+}
+
+#main-nav ul
+{ 
+    padding-left:0;
+    display: none;
+}
+#main-nav li
+{ 
+    list-style:none;
+    background-color: var(--primary-color);
+    padding: 5px;
+}
+
+#main-nav li:hover {
+    background-color:var(--third-color);
+}
+#main-nav a
+{
+    text-decoration: none; 
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* apply to 600px or bigger */
+@media only screen and (min-width:600px){
+    #main-nav li
+    {
+        flex:1;
+    }
+    #main-nav ul
+    {
+        display: flex;
+    }
+    .columns
+    { 
+        display:flex; 
+    }
+
+}
+
