@@ -1,12 +1,11 @@
 import "../css/Header.css"; 
-import logo from "../MPTimages/logo.jpg";
 
 const Header = () => { 
     return (
         <header class="columns"> 
-            <img id="logo1" src={logo} alt="Logo 1"/> 
+            <img id="logo1" src="/MPTimages/logo.jpg" alt="Logo 1"/> 
             <h1> Mackin Pallet & Trucking Inc. </h1>
-            <img id="logo2" src={logo} alt="Logo 2"/> 
+            <img id="logo2" src="/MPTimages/logo.jpg" alt="Logo 2"/> 
         </header>
     ); 
 };

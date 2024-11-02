@@ -1,0 +1,33 @@
+#products 
+    { 
+        background-color:var(--third-color);
+    }
+#products-1
+    {
+        background-color: var(--third-color);
+    }
+
+#OtherProducts, #Pallets, #Trucking, #pricing-delivery
+    {
+    background:white; 
+    padding: 10px; 
+    margin: 20px; 
+    width:70%; 
+    border:5px solid var(--primary-color);
+    box-shadow: 5px 5px;
+    font-size: 20px;
+    text-align: center;
+    }
+ul
+    { 
+    list-style-type: none;
+    text-align: center;
+    }
+    li 
+    {
+        line-height: 1.8; 
+    }
+    #product-pic
+    { 
+        max-width: 100%;
+    }

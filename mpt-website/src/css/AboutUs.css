@@ -1,0 +1,24 @@
+/* about us*/
+#about-us
+{ 
+    background-color:var(--third-color);
+    margin-bottom: 5px;
+}
+#about-us11
+{
+    background-color:var(--seventh-color);
+    margin: 5px; 
+    font-size: 23px;
+    border: 2px solid black; 
+    box-shadow: 5px 5px;
+    padding-left: 15px;  
+}
+#about-us22
+{
+    background-color:var(--seventh-color);
+    margin: 5px;
+    font-size: 23px;
+    border: 2px solid black; 
+    box-shadow: 5px 5px; 
+    padding-left: 15px; 
+}
