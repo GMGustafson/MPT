@@ -8,7 +8,7 @@ const ContactUs = () => {
 
     useEffect(()=>{
         (async() => {
-            const response = await axios.get("https://github.com/GMGustafson/MPT/blob/main/mpt-website/src/json/contacts.json");
+            const response = await axios.get("https://raw.githubusercontent.com/GMGustafson/MPT/refs/heads/main/mpt-website/src/json/contacts.json");
             setContacts(response.data);
         })();
     },[]);
