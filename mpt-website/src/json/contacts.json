@@ -5,7 +5,7 @@
         "position": "President",
         "phone": "(508) - 584 - 4248",
         "email": "mackinpallet@gmail.com",
-        "imgSrc": "MPTimages/papa.jpg"
+        "imgSrc": "MPTimages/Contacts/papa.jpg"
     },
     {
         "id": "mom",
@@ -13,7 +13,7 @@
         "position": "Chief Financial Officer",
         "phone": "(508) - 612 - 0831",
         "email": "mackinpallet@gmail.com",
-        "imgSrc": "MPTimages/mom.jpg"
+        "imgSrc": "MPTimages/Contacts/mom.jpg"
     },
     {
         "id": "nana",
@@ -21,6 +21,6 @@
         "position": "Clerk",
         "phone": "(508) - 584 - 4248",
         "email": "mackinpallet@gmail.com",
-        "imgSrc": "MPTimages/nana.jpg"
+        "imgSrc": "MPTimages/Contacts/nana.jpg"
     }
 ]
