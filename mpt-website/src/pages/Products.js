@@ -3,7 +3,10 @@ import "../css/Products.css";
 
 const Products = () => {
   return (
-    <div>
+    
+    <div id="products-page">
+      <h1 id="page-heading">Products</h1>
+
       <div id="products" className="columns">
         <section id="Pallets" className="three">
           <h1>Pallets</h1>
@@ -20,7 +23,7 @@ const Products = () => {
         </section>
 
         <section id="OtherProducts" className="three">
-          <h2>Other Products</h2>
+          <h1>Other Products</h1>
           <p>Misc. small shipping pallets</p>
           <p>New Custom sizes to order - NEW pallets only</p>
           <img id="product-pic" src="MPTimages/pallet.jpg" alt="Pallets" />
