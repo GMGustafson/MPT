@@ -4,13 +4,13 @@ const Gallery = () => {
     };
 
     const images = importAll(
-        require.context("/MPTimages/Gallery", false, /\.(png|jpe?g|svg$)/)
+        require.context("../MPTimages/Gallery", false, /\.(png|jpe?g|svg$)/)
     );
 
     return(
         <div> 
             <h1> Gallery</h1>
-            <img src={images} alt={images} />
+            <image src={images} alt={images} />
         </div>
     )
 };

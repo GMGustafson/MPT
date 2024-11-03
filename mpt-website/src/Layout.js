@@ -9,12 +9,14 @@ const Layout = () =>
         <>
             <Header/>
             <nav id = "main-nav">
-                <li> <Link to="/"> Home </Link></li>
-                <li><Link to="/AboutUs"> About Us </Link></li>
-                <li><Link to="/ContactUs"> Contact Us </Link></li>
-                <li><Link to="/Gallery"> Gallery </Link></li>
-                <li><Link to="/Products"> Products </Link></li>
-                <li><Link to="/Reviews"> Reviews </Link></li>
+                <ul>
+                    <li> <Link to="/"> Home </Link></li>
+                    <li><Link to="/AboutUs"> About Us </Link></li>
+                    <li><Link to="/ContactUs"> Contact Us </Link></li>
+                    <li><Link to="/Gallery"> Gallery </Link></li>
+                    <li><Link to="/Products"> Products </Link></li>
+                    <li><Link to="/Reviews"> Reviews </Link></li>
+                </ul>
             </nav>
             
             <Outlet/>

@@ -1,9 +1,10 @@
-
 import "../css/Home.css"; 
 
 const Home = () => {
     return (
-        <img id="home-pic" src="MPTimages/HOMEPIC.png" alt="HOME_PIC"/> 
+        <div id = "home-pics"> 
+            <image id="home-pic" src="MPTimages/HOMEPIC.png" alt="HOME_PIC"/> 
+        </div>
     );
 };
     
