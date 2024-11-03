@@ -1,0 +1,39 @@
+#contact-us
+{ 
+    background-color: var(--third-color);
+}
+
+#papa-pic , #mom-pic, #nana-pic 
+{ 
+    max-width: 300px;
+    max-height: 300px;
+    display:block;
+    margin:auto;
+}
+
+#nana, #mom, #papa
+{
+    background: white; 
+    padding: 10px;
+    padding-top: 30px;  
+    margin: 20px; 
+    width:70%;  
+    border:5px solid black; 
+    text-align: center;
+    box-shadow: 5px 5px;
+    font-size: 25px;
+    align-items: center;
+    /*display: block;*/
+}
+#link
+{ 
+    text-decoration: none; 
+    color: var(--seventh-color);
+    display: block;
+    text-align: center;
+    font-size: x-large;
+}
+#link:hover
+{ 
+    background-color: var(--third-color);
+}

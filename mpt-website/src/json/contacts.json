@@ -1,0 +1,26 @@
+[
+    {
+        "id": "papa",
+        "name": "Daniel E. Mackin",
+        "position": "President",
+        "phone": "(508) - 584 - 4248",
+        "email": "mackinpallet@gmail.com",
+        "imgSrc": "MPTimages/papa.jpg"
+    },
+    {
+        "id": "mom",
+        "name": "Jennifer P. Mackin Bruce",
+        "position": "Chief Financial Officer",
+        "phone": "(508) - 612 - 0831",
+        "email": "mackinpallet@gmail.com",
+        "imgSrc": "MPTimages/mom.jpg"
+    },
+    {
+        "id": "nana",
+        "name": "Rhonda M. Mackin",
+        "position": "Clerk",
+        "phone": "(508) - 584 - 4248",
+        "email": "mackinpallet@gmail.com",
+        "imgSrc": "MPTimages/nana.jpg"
+    }
+]
