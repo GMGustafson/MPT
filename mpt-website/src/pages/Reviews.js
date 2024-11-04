@@ -1,5 +1,5 @@
 
-import "../css/ContactUs.css"; 
+import "../css/Reviews.css"; 
 import {useState, useEffect } from "react";
 import axios from "axios";
 
@@ -17,7 +17,7 @@ const Reviews = () => {
         <div id="contact-us" className="columns">
             {reviews.map(review => (
                 <section id={review.id} className="one">
-                    <section id={"company"}>
+                    <section id="company">
                         <p>Company: {review.companyName}</p>
                         <p>Review: {review.review}</p>
                         <p> Date: {review.date}</p>
