@@ -3,18 +3,6 @@
     max-width: 300px;
     max-height: 300px;
     border:5px solid black;
-    
-}
-#product-gallery
-{ 
-    max-width: 200px;
-    max-height: 300px;
-}
-#aboutus-gallery
-{ 
-    max-width: 275px; 
-    max-height: 100%;
-    border:3px solid black;
 }
 #gallery-content {
    
@@ -22,13 +10,25 @@
     flex-wrap: wrap;         
     justify-content: center; 
     align-items: center;     
-    margin: 0 auto;
     background-color: var(--third-color);
+    margin-left: 5%;
+    margin-right:5%; 
 }
 #gallery, #product-gallery, #aboutus-gallery {
     margin: 10px;
     border: 5px solid black;
     box-sizing: border-box;
+}
+#background
+{ 
+    background-color: var(--third-color);
+}
+
+@media only screen and (max-width:600px){
+    #gallery-content
+    { 
+        display: block;
+    }
 }
 
 

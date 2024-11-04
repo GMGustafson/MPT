@@ -14,18 +14,20 @@ const Reviews = () => {
     },[]);
 
     return (
-        <div id="contact-us" className="columns">
-            {reviews.map(review => (
-                <section id={review.id} className="one">
-                    <section id="company">
-                        <p>Company: {review.companyName}</p>
-                        <p>Review: {review.review}</p>
-                        <p> Date: {review.date}</p>
-                        <p>Reviewers Name: {review.reviewersName}</p>
-                        <image id="img" src={review.imgSrc} alt={`${review.name}'s picture`} />
+        <div id="background"> 
+            <h1 id="page-heading">Reviews</h1>
+            <div id="contact-us" className="columns">
+                {reviews.map(review => (
+                    <section id={review.id} className="one">
+                        <section id="company">
+                            <p id="company-name">{review.companyName}</p>
+                            <p>{review.review}</p>
+                            <p>Reviewed By: {review.reviewersName} on {review.date}</p>
+                            <img id="images" src={review.image} alt={`${review.name}'s picture`} />
+                        </section>
                     </section>
-                </section>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };

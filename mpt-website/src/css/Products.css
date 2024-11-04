@@ -44,3 +44,10 @@ h1
     font-weight: bold; 
     color:white; 
 }
+
+@media only screen and (max-width:600px){
+    #OtherProducts, #Pallets, #Trucking, #pricing-delivery
+    { 
+        display:flexbox;
+    }
+}

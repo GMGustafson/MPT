@@ -46,6 +46,9 @@
     { 
         display:flex; 
     }
+    #main_nav li{ 
+        flex:1;
+    }
 
 }
 
