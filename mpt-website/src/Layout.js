@@ -1,3 +1,4 @@
+
 import {Outlet, Link} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -8,6 +9,7 @@ const Layout = () =>
     return (
         <>
             <Header/>
+
             <nav id = "main-nav">
                 <ul>
                     <li> <Link to="/"> Home </Link></li>
