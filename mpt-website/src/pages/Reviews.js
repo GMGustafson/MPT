@@ -8,7 +8,7 @@ const Reviews = () => {
 
     useEffect(()=>{
         (async() => {
-            const response = await axios.get("https://raw.githubusercontent.com/GMGustafson/MPT/refs/heads/main/mpt-website/src/json/reviews.json");
+            const response = await axios.get("http://localhost:3002/api/reviews");
             setReviews(response.data);
         })();
     },[]);
