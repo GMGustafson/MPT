@@ -26,17 +26,25 @@
     font-size: 23px;
 }
 
-#aboutus-gallery
+.aboutus-gallery
 { 
-    max-width: 275px; 
+    max-width:100%;
     max-height: 100%;
     border:3px solid black;
 }
 
-
-@media only screen and (max-width:600px){
-#aboutus-gallery
-{ 
-    display: block;
+#about-us1 .one, #about-us2 .one {
+    width:100%;
+    text-align:center;
 }
+
+
+@media only screen and (min-width:768x){
+    .four {
+        flex:4;
+    }
+
+    .one {
+        flex:1;
+    }
 }

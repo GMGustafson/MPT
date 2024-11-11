@@ -33,7 +33,7 @@
 }
 
 /* apply to 600px or bigger */
-@media only screen and (min-width:600px){
+@media only screen and (min-width:768px){
     #main-nav li
     {
         flex:1;

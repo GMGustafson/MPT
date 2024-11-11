@@ -39,8 +39,8 @@
 }
 
 @media only screen and (max-width:600px){
-    #nana, #mom, #papa
+    #contacts
     { 
-        display: flex;
+        flex-wrap: wrap;
     }
 }
