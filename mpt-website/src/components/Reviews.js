@@ -24,7 +24,7 @@ const Reviews = () => {
                         <p id="company-name">{review.companyName}</p>
                        <p>{review.review}</p>
                        <p>Reviewed By: {review.reviewersName} on {review.date}</p>
-                        <img id="images" src={"http://localhost:3003/images/" + review.image} alt={`${review.name}'s picture`} />
+                        <img id="images" src={"https://mpt-backend-m8r7.onrender.com/images/" + review.image} alt={`${review.name}'s picture`} />
                     </section>
                 ))}
             </div>
