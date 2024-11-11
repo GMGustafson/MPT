@@ -1,18 +1,14 @@
-import "../css/Contacts.css"; 
+import "../css/Reviews.css"; 
 
-const Contact = (Contact) => {
+const review = (Review) => {
     return (
-    <section id="contact" className="one">
-       <img id={`${contact.id}-pic`} src={"http://localhost:3003/images/" + contact.image} alt={`${contact.name}'s picture`} />
-        <section id={`${contact.id}-info`}>
-            <p id="name">{contact.name}</p>
-            <p>Position: {contact.position}</p>
-            <p>Phone Number: {contact.phone}</p>
-            <p>Email: {contact.email}</p>
-        </section> 
+    <section id="company" className="one">
+        <p id="company-name">{review.companyName}</p>
+        <p>{review.review}</p>
+        <p>Reviewed By: {review.reviewersName} on {review.date}</p>
+        <img id="images" src={"http://localhost:3003/images/" + review.image} alt={`${review.name}'s picture`} />
     </section>
-
     );
 };
 
-export default Contact;
+export default Review;

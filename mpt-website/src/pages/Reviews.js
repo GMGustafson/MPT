@@ -8,4 +8,4 @@ const Review = () => {
   );
 };
 
-export default Reviews;
+export default Review;
