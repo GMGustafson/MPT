@@ -6,9 +6,9 @@
 }
 
 #home-pic {
-    max-width: 100%; /* Ensures the image scales responsively */
+    max-width: 70%; 
     height: auto; /* Maintain the image's aspect ratio */
-    max-height: 100% ;
+    max-height: 1500px ;
 }
 
 @media only screen and (max-width:600px){
