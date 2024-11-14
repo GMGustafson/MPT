@@ -1,0 +1,45 @@
+
+#dialog-section {
+  position: relative;
+}
+
+#add-dialog,
+#edit-dialog,
+#delete-dialog {
+  display: block;
+}
+
+#delete-content {
+  margin-bottom: 10px;
+}
+
+.w3-container
+{ 
+    background-color: aqua;
+    margin: auto;
+    color: purple; 
+    width: 50%;
+    height: 50%;
+}
+
+#img-prev {
+  max-width: 100%;
+}
+
+#delete-dialog button {
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  #img-prev-section {
+    flex: 1;
+  }
+
+  #img-prev {
+    max-width: 100%;
+  }
+
+  #img-upload {
+    flex: 6;
+  }
+}

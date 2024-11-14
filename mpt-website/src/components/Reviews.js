@@ -2,9 +2,11 @@
 import "../css/Reviews.css"; 
 import {useState, useEffect } from "react";
 import axios from "axios";
+import AddReview from "./addReview";
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
     useEffect(()=>{
         (async() => {
@@ -15,9 +17,24 @@ const Reviews = () => {
         })();
     },[]);
 
+    const openAddDialog = () => {
+        console.log("HI"); 
+        setShowAddDialog(true);
+      };
+    
+      const closeAddDialog = () => {
+        setShowAddDialog(false);
+      };
+
     return (
         <div id="background"> 
             <h1 id="page-heading">Reviews</h1>
+
+            <button id="add-review"onClick={openAddDialog}> Add Review</button>
+            
+            {showAddDialog ? (
+                <AddReview closeDialog={closeAddDialog}/> ):("")}
+      
             <div id="contact-us" className="columns">
                 {reviews.map((review) => (
                     <section id="company" className="one">
