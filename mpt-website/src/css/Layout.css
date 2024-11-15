@@ -11,7 +11,6 @@
 #main-nav ul
 { 
     padding-left:0;
-    display: none;
 }
 #main-nav li
 { 
@@ -33,6 +32,13 @@
 }
 .hide {
     display: none;
+  }
+
+  #hamburger div {
+    padding:5px;
+    background:red;
+    width:100px;
+    height: 20px;
   }
 
 /* apply to 600px or bigger */
