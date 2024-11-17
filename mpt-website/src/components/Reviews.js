@@ -13,18 +13,21 @@ const Reviews = () => {
             const response = await axios.get("https://mpt-backend-m8r7.onrender.com/api/reviews");
             console.log(response.data);
             setReviews(response.data);
-          
         })();
     },[]);
 
     const openAddDialog = () => {
-        console.log("HI"); 
         setShowAddDialog(true);
       };
     
       const closeAddDialog = () => {
         setShowAddDialog(false);
       };
+
+      const updateReviews= (Review) => {
+        setReviews((Review) => [...reviews, Review]);
+      };
+    
 
     return (
         <div id="background"> 
@@ -33,7 +36,7 @@ const Reviews = () => {
             <button id="add-review"onClick={openAddDialog}> Add Review</button>
             
             {showAddDialog ? (
-                <AddReview closeDialog={closeAddDialog}/> ):("")}
+                <AddReview closeDialog={closeAddDialog} showNewReview={updateReviews}/> ):("")}
       
             <div id="contact-us" className="columns">
                 {reviews.map((review) => (

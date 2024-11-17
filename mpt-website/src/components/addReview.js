@@ -5,6 +5,40 @@ const AddHousePlan = (props) => {
     const [inputs, setInputs] = useState({});
     const [result, setResult] = useState("");
 
+    const handleChange = (event) => {
+      const name = event.target.name;
+      const value = event.target.value;
+      setInputs((values)=>({...values,[name]:value}));
+    };
+  
+    const handleImageChange = (event) => {
+      const name = event.target.name;
+      const value = event.target.files[0];
+      setInputs((values)=>({...values,[name]:value}));
+    };
+  
+    const addToServer = async(event) => {
+      event.preventDefault();
+      setResult("Sending....");
+  
+      const formData = new FormData(event.target);
+      console.log(...formData);
+  
+      const response = await fetch("https://mpt-backend-m8r7.onrender.com/api/reviews",{
+        method:"POST",
+        body:formData
+      });
+  
+      if(response.status == 200){
+        setResult("Review successfully added!");
+        props.showNewHouse(await response.json());
+        event.target.reset();
+        props.closeDialog();
+      } else {
+        setResult("Error adding Review");
+      }
+    };
+
   return (
     <div id="add-dialog" className="w3-modal">
       <div className="w3-modal-content">
