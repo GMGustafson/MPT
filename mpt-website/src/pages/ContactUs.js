@@ -5,8 +5,10 @@ import Contacts from "../components/Contacts.js";
 const ContactUs = () => {
     return (
         <>
-            <Contacts/>
-            <Form />
+            <section>
+                <Contacts />
+                <Form />
+            </section>
         </>
     );
 };
