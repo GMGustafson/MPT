@@ -31,7 +31,7 @@ const AddHousePlan = (props) => {
   
       if(response.status == 200){
         setResult("Review successfully added!");
-        props.showNewHouse(await response.json());
+        comment.showNewReview(await response.json());
         event.target.reset();
         props.closeDialog();
       } else {
@@ -46,22 +46,22 @@ const AddHousePlan = (props) => {
           <span id="dialog-close" className="w3-button w3-display-topright">
             &times;
           </span>
-          <form id="add-review-form">
+          <form id="add-review-form" onSubmit={addToServer} method="POST">
             <p>
               <label htmlFor="companyName"> Company Name:</label>
-              <input type="text" id="CompanyName" name="CompanyName" required value={inputs.name || ""} />
+              <input type="text" id="CompanyName" name="companyName" required value={inputs.name || ""} onChange={handleChange} />
             </p>
             <p>
               <label htmlFor="review"> Review: </label>
-              <input type="text" id="Review" name="Review" required value={inputs.name || ""} />
+              <input type="text" id="Review" name="review" required value={inputs.name || ""} onChange={handleChange} />
             </p>
             <p>
               <label htmlFor="reviewersName"> Reviewers Name:</label>
-              <input type="text" id="reviewersName" name="reviewersName" required value={inputs.name || ""} />
+              <input type="text" id="reviewersName" name="reviewersName" required value={inputs.name || ""} onChange={handleChange} />
             </p>
             <p>
               <label htmlFor="date"> Date of Review: </label>
-              <input type="text" id="date" name="date" required value={inputs.name || ""}  />
+              <input type="text" id="date" name="date" required value={inputs.name || ""} onChange={handleChange}   />
             </p>
             <section className="columns">
               <p id="img-prev-section">
@@ -69,12 +69,13 @@ const AddHousePlan = (props) => {
               </p>
               <p id="img-upload">
                 <label htmlFor="img">Upload Image:</label>
-                <input type="file" id="img" name="img" accept="image/*" />
+                <input type="file" id="img" name="img" accept="image/*" onChange={handleImageChange}/>
               </p>
             </section>
             <p>
               <button type="submit">Submit</button>
             </p>
+            <p>{result}</p>
           </form>
         </div>
       </div>
