@@ -30,12 +30,14 @@ const AddHousePlan = (props) => {
       });
   
       if(response.status == 200){
+        console.log("Success:", formData);
         setResult("Review successfully added!");
-        comment.showNewReview(await response.json());
+        props.showNewReview(await response.json());
         event.target.reset();
         props.closeDialog();
       } else {
-        setResult("Error adding Review");
+        console.log("error");
+        setResult("hi Error adding Review");
       }
     };
 
@@ -49,19 +51,19 @@ const AddHousePlan = (props) => {
           <form id="add-review-form" onSubmit={addToServer} method="POST">
             <p>
               <label htmlFor="companyName"> Company Name:</label>
-              <input type="text" id="CompanyName" name="companyName" required value={inputs.name || ""} onChange={handleChange} />
+              <input type="text" id="CompanyName" name="companyName" required value={inputs.companyName || ""} onChange={handleChange} />
             </p>
             <p>
               <label htmlFor="review"> Review: </label>
-              <input type="text" id="Review" name="review" required value={inputs.name || ""} onChange={handleChange} />
+              <input type="text" id="Review" name="review" required value={inputs.review || ""} onChange={handleChange} />
             </p>
             <p>
               <label htmlFor="reviewersName"> Reviewers Name:</label>
-              <input type="text" id="reviewersName" name="reviewersName" required value={inputs.name || ""} onChange={handleChange} />
+              <input type="text" id="reviewersName" name="reviewersName" required value={inputs.reviewersName || ""} onChange={handleChange} />
             </p>
             <p>
               <label htmlFor="date"> Date of Review: </label>
-              <input type="text" id="date" name="date" required value={inputs.name || ""} onChange={handleChange}   />
+              <input type="text" id="date" name="date" required value={inputs.date || ""} onChange={handleChange}   />
             </p>
             <section className="columns">
               <p id="img-prev-section">

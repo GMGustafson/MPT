@@ -1,6 +1,6 @@
 import "../css/Reviews.css"; 
 
-const review = (Review) => {
+const review = () => {
     return (
     <section id="company" className="one">
         <p id="company-name">{review.companyName}</p>
