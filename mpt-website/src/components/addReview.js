@@ -48,7 +48,7 @@ const AddReview = (props) => {
           <span id="dialog-close" className="w3-button w3-display-topright">
             &times;
           </span>
-          <form id="add-review-form" onSubmit={addToServer} method="POST">
+          <form id="add-review-form" onSubmit={addToServer} method="POST"> 
             <p>
               <label htmlFor="companyName">Company Name:</label>
               <input
