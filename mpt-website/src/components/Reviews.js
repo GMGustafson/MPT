@@ -38,9 +38,9 @@ const Reviews = () => {
             {showAddDialog ? (
                 <AddReview closeDialog={closeAddDialog} showNewReview={updateReviews}/> ):("")}
       
-            <div id="contact-us" className="columns">
+            <div className="reviews-grid" >
                 {reviews.map((review) => (
-                    <section id="company" className="one">
+                    <section id="company" >
                         <p id="company-name">{review.companyName}</p>
                        <p>{review.review}</p>
                        <p>Reviewed By: {review.reviewersName} on {review.date}</p>
@@ -53,3 +53,4 @@ const Reviews = () => {
 };
 
 export default Reviews;
+
