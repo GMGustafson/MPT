@@ -6,6 +6,7 @@ const EditReview = (props) => {
     _id: props._id,
     companyName: props.companyName,
     review: props.review,
+    reviewersName: props.reviewersName, 
     date: props.date,
     prev_img: props.image,
   });

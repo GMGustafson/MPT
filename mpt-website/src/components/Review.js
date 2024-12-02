@@ -53,6 +53,7 @@ const Review = (props) => {
               _id={review._id}
               companyName={review.companyName}
               review={review.review}
+              reviewersName={review.reviewersName}
               date={review.date}
               image={review.image}
             />
