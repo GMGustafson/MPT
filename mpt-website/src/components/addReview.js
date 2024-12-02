@@ -85,7 +85,7 @@ const AddReview = (props) => {
             <p>
               <label htmlFor="date">Date of Review:</label>
               <input
-                type="text"
+                type="date"
                 id="date"
                 name="date"
                 required
