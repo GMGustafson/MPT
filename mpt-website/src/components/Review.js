@@ -81,7 +81,7 @@ const Review = (props) => {
 
               <section >
                 <img id="images"
-                  src={`http://localhost:3003/images/${review.image}`}
+                  src={`https://mpt-backend-m8r7.onrender.com/api/reviews/images/${review.image}`}
                   alt={`Image of ${review.companyName}`}
                 />
               </section>
