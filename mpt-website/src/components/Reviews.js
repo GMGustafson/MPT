@@ -11,7 +11,7 @@ const Reviews = () => {
 
     useEffect(()=>{
         (async() => {
-            const response = await axios.get("http://localhost:3003/api/reviews");
+            const response = await axios.get("https://mpt-backend-m8r7.onrender.com/api/reviews");
             console.log(response.data);
             setReviews(response.data);
         })();

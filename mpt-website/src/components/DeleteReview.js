@@ -5,7 +5,7 @@ const DeleteReview = (props) => {
   const [result, setResult] = useState("");
 
   const deleteReview = async() => {
-   const response = await fetch(`http://localhost:3003/api/reviews/${props._id}`,{
+   const response = await fetch(`https://mpt-backend-m8r7.onrender.com/api/reviews${props._id}`,{
     method:"DELETE"
    });
 
