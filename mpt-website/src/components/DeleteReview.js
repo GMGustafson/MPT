@@ -1,11 +1,11 @@
-import "../css/Dialog.css";
+import "../css/ReviewActions.css";
 import React, { useState } from "react";
 
 const DeleteReview = (props) => {
   const [result, setResult] = useState("");
 
   const deleteReview = async() => {
-   const response = await fetch(`http://localhost:3001/api/house_plans/${props._id}`,{
+   const response = await fetch(`http://localhost:3003/api/reviews/${props._id}`,{
     method:"DELETE"
    });
 

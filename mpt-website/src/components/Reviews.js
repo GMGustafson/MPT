@@ -3,6 +3,7 @@ import "../css/Reviews.css";
 import {useState, useEffect } from "react";
 import axios from "axios";
 import AddReview from "./addReview";
+import Review from "./Review";
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([]);
@@ -10,7 +11,7 @@ const Reviews = () => {
 
     useEffect(()=>{
         (async() => {
-            const response = await axios.get("https://mpt-backend-m8r7.onrender.com/api/reviews");
+            const response = await axios.get("http://localhost:3003/api/reviews");
             console.log(response.data);
             setReviews(response.data);
         })();
@@ -40,17 +41,18 @@ const Reviews = () => {
       
             <div className="reviews-grid" >
                 {reviews.map((review) => (
-                    <section id="company" >
-                        <p id="company-name">{review.companyName}</p>
-                       <p>{review.review}</p>
-                       <p>Reviewed By: {review.reviewersName} on {review.date}</p>
-                        <img id="images" src={"https://mpt-backend-m8r7.onrender.com/images/" + review.image} alt={`${review.name}'s picture`} />
-                    </section>
-                ))}
-            </div>
-        </div>
-    );
+                    <Review 
+                        companyName = {review.companyName}
+                        _id = {review._id}
+                        review = {review.review} 
+                        reviewersName = {review.reviewersName}
+                        date = {review.date}
+                        image = {review.image}
+                        /> 
+                     ))}
+      </div>
+    </div>
+  );
 };
-
 export default Reviews;
 

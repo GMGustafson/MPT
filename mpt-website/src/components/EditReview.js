@@ -1,4 +1,4 @@
-import "../css/Dialog.css";
+import "../css/ReviewActions.css";
 import React, { useState } from "react";
 
 const EditReview = (props) => {
@@ -7,7 +7,7 @@ const EditReview = (props) => {
     companyName: props.companyName,
     review: props.review,
     date: props.date,
-    prev_img: props.main_image,
+    prev_img: props.image,
   });
 
   const [result, setResult] = useState("");
@@ -24,13 +24,13 @@ const EditReview = (props) => {
     setInputs((values) => ({ ...values, [name]: value }));
   };
 
-  const onSubmit = async(event) => {
+  const addToServer = async(event) => {
     event.preventDefault();
     setResult("Sending....");
 
     const formData = new FormData(event.target);
     console.log(...formData);
-    const response = await fetch(`https://mpt-backend-m8r7.onrender.com/api/reviews/${props._id}`,{
+    const response = await fetch(`http://localhost:3003/api/reviews/${props._id}`,{
       method:"PUT",
       body:formData
     });

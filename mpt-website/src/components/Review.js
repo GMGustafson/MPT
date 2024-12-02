@@ -36,7 +36,7 @@ const Review = (props) => {
   return (
     <>
       {showReview && (
-        <div>
+        <div ClassName = "company" id="company">
           {showDeleteDialog && (
             <DeleteReview
               closeDialog={closeDeleteDialog}
@@ -59,12 +59,7 @@ const Review = (props) => {
           )}
 
           <section className="reviews columns">
-            <section className="feature-image">
-              <img
-                src={`http://localhost:3000/images/${review.image}`}
-                alt={`Image of ${review.companyName}`}
-              />
-            </section>
+           
 
             <section className="info">
               <header className="columns">
@@ -78,11 +73,17 @@ const Review = (props) => {
                   </a>
                 </section>
               </header>
-
               <p>{review.review}</p>
               <p>
                 Reviewed By: {review.reviewersName} on {review.date}
               </p>
+
+              <section >
+                <img id="images"
+                  src={`http://localhost:3003/images/${review.image}`}
+                  alt={`Image of ${review.companyName}`}
+                />
+              </section>
             </section>
           </section>
         </div>
