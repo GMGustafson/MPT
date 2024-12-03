@@ -26,7 +26,8 @@ const Reviews = () => {
       };
 
       const updateReviews= (Review) => {
-        setReviews((Review) => [...reviews, Review]);
+        console.log("In update review " + Review.companyName);
+        setReviews((reviews) => [...reviews, Review]);
       };
     
 
