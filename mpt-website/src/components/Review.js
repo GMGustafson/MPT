@@ -74,9 +74,9 @@ const Review = (props) => {
                   </a>
                 </section>
               </header>
-              <p>{review.review}</p>
+              <p>"{review.review}"</p>
               <p>
-                Reviewed By: {review.reviewersName} on {review.date}
+                Reviewed By: {review.reviewersName} on {review.date} . 
               </p>
 
               <section >
