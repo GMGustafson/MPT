@@ -27,6 +27,7 @@ const AddReview = (props) => {
     console.log(inputs.img); 
     console.log(inputs._id); 
     console.log(inputs.companyName); 
+    console.log(inputs.date); 
   
     const response = await fetch("https://mpt-backend-m8r7.onrender.com/api/reviews", {
       method: "POST",
@@ -90,7 +91,7 @@ const AddReview = (props) => {
             <p>
               <label htmlFor="date">Date of Review:</label>
               <input
-                type="date"
+                type="text"
                 id="date"
                 name="date"
                 required
