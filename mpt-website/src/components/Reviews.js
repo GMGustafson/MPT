@@ -48,7 +48,7 @@ const Reviews = () => {
                         review = {review.review} 
                         reviewersName = {review.reviewersName}
                         date = {review.date}
-                        image = {review.image}
+                        image = {review.img}
                         /> 
                      ))}
       </div>

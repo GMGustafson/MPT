@@ -24,6 +24,10 @@ const AddReview = (props) => {
     const formData = new FormData(event.target);
     console.log(...formData);
 
+    console.log(inputs.img); 
+    console.log(inputs._id); 
+    console.log(inputs.companyName); 
+  
     const response = await fetch("https://mpt-backend-m8r7.onrender.com/api/reviews", {
       method: "POST",
       body: formData,
