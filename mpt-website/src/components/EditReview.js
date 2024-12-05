@@ -29,9 +29,12 @@ const EditReview = (props) => {
     event.preventDefault();
     setResult("Sending....");
 
+    
+
     const formData = new FormData(event.target);
     console.log(...formData);
-    const response = await fetch(`https://mpt-backend-m8r7.onrender.com/api/reviews/${props._id}`,{
+    console.log(inputs.reviewersName);
+    const response = await fetch(`http://localhost:3000/api/reviews/${props._id}`,{
       method:"PUT",
       body:formData
     });
@@ -94,7 +97,7 @@ const EditReview = (props) => {
             <p>
               <label htmlFor="date">Date of Review:</label>
               <input
-                type="text"
+                type="date"
                 id="date"
                 name="date"
                 required

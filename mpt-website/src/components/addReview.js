@@ -29,7 +29,7 @@ const AddReview = (props) => {
     console.log(inputs.companyName); 
     console.log(inputs.date); 
   
-    const response = await fetch("https://mpt-backend-m8r7.onrender.com/api/reviews", {
+    const response = await fetch("http://localhost:3000/api/reviews", {
       method: "POST",
       body: formData,
     });

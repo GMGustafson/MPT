@@ -55,7 +55,7 @@ const Review = (props) => {
               review={review.review}
               reviewersName={review.reviewersName}
               date={review.date}
-              image={review.image}
+              image={review.img}
             />
           )}
 
@@ -81,7 +81,7 @@ const Review = (props) => {
 
               <section >
                 <img id="images"
-                  src={`https://mpt-backend-m8r7.onrender.com/${review.image}`}
+                  src={`http://localhost:3000/${review.image}`}
                   alt={`Image of ${review.companyName}`}
                 />
               </section>
