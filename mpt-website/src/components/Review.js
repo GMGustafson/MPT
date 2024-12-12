@@ -76,12 +76,12 @@ const Review = (props) => {
               </header>
               <p>"{review.review}"</p>
               <p>
-                Reviewed By: {review.reviewersName} on {review.date} . 
+                Reviewed By: {review.reviewersName} on {review.date.substring(0,review.date.indexOf("T"))} 
               </p>
 
               <section >
                 <img id="images"
-                  src={`https://mpt-backend-m8r7.onrender.com//${review.img}`}
+                  src={`http://localhost:3003/${review.img}`}
                   alt={`Image of ${review.companyName}`}
                 />
               </section>

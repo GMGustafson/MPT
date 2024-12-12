@@ -3,6 +3,7 @@
     justify-content: center; /* Centers the image horizontally */
     padding: 20px; /* Add some padding around the image */
     background-color: var(--third-color);
+    margin:0;
 }
 
 #home-pic {

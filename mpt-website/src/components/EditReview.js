@@ -34,7 +34,7 @@ const EditReview = (props) => {
     const formData = new FormData(event.target);
     console.log(...formData);
     console.log(inputs.reviewersName);
-    const response = await fetch(`https://mpt-backend-m8r7.onrender.com/api/reviews/${props._id}`,{
+    const response = await fetch(`http://localhost:3003/api/reviews/${props._id}`,{
       method:"PUT",
       body:formData
     });
